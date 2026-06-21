@@ -39,6 +39,7 @@ console.log(typeof(n)+"\n");
 // ---- Why JS is dynamic language ----
 
 // Here we can change the type of the variable in run time just by assigning new values
+// NOTE : using let and var we can achieve this , however in const its not possible.
 
 let d = 1;
 console.log(d);
