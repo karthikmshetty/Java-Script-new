@@ -27,8 +27,24 @@ let b = "karthik";
 */
 // eg :
 {
-    const c = 10;
+    const c = 15;
     let d = 20;
     console.log(c);
 }
-console.log(c); // we will be getting 'c' is not defined.
+// console.log(c); // we will be getting 'c' is not defined.
+
+
+
+// --- Lexical Scope ---
+/* There is one more concept called 'Lexical Scope'.
+     When function has inner/local variable it gives prioity to that variable. 
+     Or else if finds globally and executes
+     exg :
+*/
+
+function hello(){
+    let x = 10;
+    console.log(x);
+}
+let x = 100;  // if you comment the x declaration inside scope then 100 will be printing.
+hello();
