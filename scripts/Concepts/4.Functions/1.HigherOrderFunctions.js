@@ -51,3 +51,5 @@ Note : There are several types of functions like
    5. Async function
       etc...
 */
+
+// Remember about closure :  Outer functoin returns inner function , its called as closure.
