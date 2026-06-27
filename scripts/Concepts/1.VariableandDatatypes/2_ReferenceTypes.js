@@ -47,6 +47,24 @@ console.log(q);
  console.log(typeof(arr)); // Remeber : Array and fun is also object. So type is object
 
 
+ //--- How to just initialise the array  and add value ---//
+// 1.When you know the array index
+let arry = [];
+arry[0] = "Apple";
+arry[1] = "Banana";
+arry[2] = "Orange";
+console.log(arry);
+
+// 2.When you dont know the array index , we can use push
+let array = [];
+array.push("Apple");
+array.push("Banana");
+array.push("Orange");
+console.log(array);
+// ["Apple", "Banana", "Orange"]
+
+
+
 
  // ---- Functions ----
    // To perform the same task again and again we use functions
