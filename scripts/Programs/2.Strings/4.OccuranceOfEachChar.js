@@ -3,12 +3,13 @@
 
 //Solution 1 (reduce with map, preffered one)
 const str = "hello world";
-let charMaps = [...str].reduce((acc,ch)=>{
-     acc[ch] = (acc[ch]||0)+1;
-     return acc;
-},new Map());
-for(let [ch,count] of charMaps){
-    if(count>1)
+const charMaps = [...str].reduce((acc, ch) => {
+    acc.set(ch, (acc.get(ch) || 0) + 1);
+    return acc;
+}, new Map());
+
+for (let [ch, count] of charMaps) {
+    if (count > 1)
         console.log(`character '${ch}' repeated '${count}' times`);
 }
 
