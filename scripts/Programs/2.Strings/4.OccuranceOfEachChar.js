@@ -4,8 +4,7 @@
 //Solution 1 (reduce with map, preffered one)
 const str = "hello world";
 const charMaps = [...str].reduce((acc, ch) => {
-    acc.set(ch, (acc.get(ch) || 0) + 1);
-    return acc;
+    return acc.set(ch, (acc.get(ch) || 0) + 1);
 }, new Map());
 
 for (let [ch, count] of charMaps) {
