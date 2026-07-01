@@ -54,10 +54,13 @@ console.log(flightData);
 //   { name:'Vistara',  price:4500 } ]
 
 // Step 2 — sort ascending LOW to HIGH
-const sortedObject = flightData.sort((a, b) => a.price - b.price);
+const sortedArrayObject = flightData.sort((a, b) => a.price - b.price);
 
 // Step 3 — print
-sortedObject.forEach(f => console.log(`${f.name} : ₹${f.price}`));
+sortedArrayObject.forEach(f => console.log(`${f.name} : ₹${f.price}`));
+
+//If you want to print specific Index
+console.log(" Specific Index ",sortedArrayObject[2]);
 
 // AirIndia : ₹2100
 // SpiceJet : ₹2100
